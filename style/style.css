@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  padding: 0 10%;
+}
+
+.active {
+  border-bottom: 1px solid #fff;
+}
+
+.main_wrapper {
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+}
+
+.header {
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(19, 185, 168, 0.5))), url(../img/hero.jpg);
+  background-image: linear-gradient(rgba(19, 185, 168, 0.5)), url(../img/hero.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.navbar_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 2.5rem;
+}
+
+.logo {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+}
+
+.logo img {
+  height: 2.5rem;
+}
+
+nav {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.nav a:hover {
+  border-bottom: 1px solid #fff;
+}
+
+.hero {
+  font-size: 1.5rem;
+  margin-top: 18rem;
+  width: 60%;
+}
+
+.mouse {
+  height: 2rem;
+  position: absolute;
+  bottom: 4%;
+  left: 50%;
+  -webkit-transform: translate(-4% -50%);
+          transform: translate(-4% -50%);
+  -webkit-animation: scroll linear 4s infinite running;
+          animation: scroll linear 4s infinite running;
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+  50% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  100% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+}
+
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+  50% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  100% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+}
+/*# sourceMappingURL=style.css.map */

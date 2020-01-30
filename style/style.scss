@@ -1,0 +1,94 @@
+// variables
+// colors
+$green: rgba(19, 185, 168, 1);
+// font
+$base-font:'Open Sans', sans-serif;
+// reset
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+// container
+.container{
+    padding: 0 10%;
+}
+// active
+.active{
+    border-bottom: 1px solid #fff;
+}
+// main wrapper
+.main_wrapper{
+    font-family: $base-font;
+    color: #fff;
+}
+// header
+
+.header{
+    height: 100vh;
+    background-image: linear-gradient(rgba(19, 185, 168, 0.5)),url(../img/hero.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.navbar_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2.5rem;
+}
+.logo{
+    flex-basis: 20%;
+}
+.logo img{
+    height: 2.5rem;
+}
+nav{
+    flex-basis: 50%;
+}
+.nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+        a{
+            color: #fff;
+            text-decoration: none;
+            text-transform: capitalize;
+        }
+        a:hover{
+            border-bottom: 1px solid #fff;}
+        
+}
+
+.hero{
+    font-size: 1.5rem;
+    margin-top: 18rem;
+    width: 60%;
+}
+
+.mouse{
+    height: 2rem;
+    position: absolute;
+    bottom: 4%;
+    left: 50%;
+    transform: translate(-4% -50%);
+    animation: scroll linear 4s infinite running;
+}
+
+
+@keyframes scroll{
+    0%{
+        transform: translateY(-20px);
+    }
+    50%{
+        transform: translateY(20px);
+    }
+    100%{
+        transform: translateY(-20px);
+    }
+
+}
