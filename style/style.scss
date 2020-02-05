@@ -28,7 +28,7 @@ $base-font:'Open Sans', sans-serif;
 
 .header{
     height: 100vh;
-    background-image: linear-gradient(rgba(19, 185, 168, 0.7)),url(../img/hero.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(102, 14, 110, 0.0))), url(../img/hero.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -65,10 +65,12 @@ nav{
 }
 
 .hero{
-    font-size: 1.5rem;
-    position: absolute;
-    bottom: 20%;
-    width: 60%;
+    font-size: 2.75rem;
+  position: absolute;
+  bottom: 20%;
+  width: 70%;
+  line-height: 1.2;
+  text-shadow: #000 2PX 2PX 8PX;
 }
 
 .mouse{
