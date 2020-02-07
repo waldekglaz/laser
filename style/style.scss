@@ -96,17 +96,41 @@ nav{
 
 }
 
-.product .container{
+.product-wrapper{
     display: flex;
+    justify-content: space-between;
     padding: 6rem 0;
 
         img{
-            height: 400px;
+            height: 500px;
+            display: block;
+            flex-basis: 40%;
         }
 }
 
 .btns a{
-background-color: red;
-padding: 0.2rem 0.4rem;
+background-color: rgb(110, 26, 206);
+padding: 0.4rem 0.6rem;
 color: #fff;
+text-decoration: none;
+}
+.btns a:hover{
+    color: rgb(110, 26, 206);
+    background-color: #eee;
+}
+.desc{
+    color: #000;
+    padding-left: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:flex-start;
+    text-align: left;
+    line-height: 1.6;
+}
+.product-desc{
+    width: 70%;
+}
+.title{
+    font-size: 4rem;
 }
