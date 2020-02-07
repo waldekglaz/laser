@@ -125,14 +125,19 @@ nav {
   }
 }
 
-.product {
+.product .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 6rem 0;
 }
 
-.product img {
+.product .container img {
   height: 400px;
+}
+
+.btns a {
+  background-color: red;
+  padding: 0.2rem 0.4rem;
 }
 /*# sourceMappingURL=style.css.map */
